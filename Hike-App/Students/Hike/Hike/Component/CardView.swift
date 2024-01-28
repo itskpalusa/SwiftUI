@@ -22,7 +22,7 @@ struct CardView: View {
         repeat {
             randomNumber = Int.random(in: 1...5)
             print("Action: Random Number Generated = \(randomNumber)")
-
+            
         } while randomNumber == imageNumber
         
         imageNumber = randomNumber
@@ -70,7 +70,7 @@ struct CardView: View {
                 // MARK: - MAIN CONTENT
                 
                 ZStack {
-                   CustomCircleView()
+                    CustomCircleView()
                     
                     Image("image-\(imageNumber)")
                         .resizable()

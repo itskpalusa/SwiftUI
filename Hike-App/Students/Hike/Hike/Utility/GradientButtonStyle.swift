@@ -17,14 +17,14 @@ struct GradientButton: ButtonStyle {
             .background(
                 // Conditional Statement with Nil Coalescing (w/ Swift Ternary Operator)
                 // Condition ? A : B
-
                 configuration.isPressed ?
+                
                 // A: When User pressed the Button
                 LinearGradient(colors: [.customGrayMedium, .customGrayLight], startPoint: .top, endPoint: .bottom)
                 :
                 // B: When the Button is not pressed
                 LinearGradient(colors: [.customGrayLight, .customGrayMedium], startPoint: .top, endPoint: .bottom)
-
+                
                 
             )
             .cornerRadius(40)
