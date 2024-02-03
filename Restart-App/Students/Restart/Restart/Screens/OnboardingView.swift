@@ -161,6 +161,7 @@ struct OnboardingView: View {
                                     withAnimation(Animation.easeOut(duration: 0.4)) {
                                         // Snap to right if over halfway point
                                         if buttonOffset > buttonWidth / 2 {
+                                            playSound(sound: "chimeup", type: "mp3")
                                             buttonOffset = buttonWidth - 80
                                             isOnboardingViewActive = false
                                         } else {
@@ -183,6 +184,7 @@ struct OnboardingView: View {
         .onAppear(perform: {
             isAnimating = true
         })
+        .preferredColorScheme(.dark)
     }
 }
 
