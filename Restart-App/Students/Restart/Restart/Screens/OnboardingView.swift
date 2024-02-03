@@ -19,6 +19,8 @@ struct OnboardingView: View {
     @State private var indicatorOpacity: Double = 1.0
     @State private var textTitle: String = "Share."
     
+    let hapticFeedback = UINotificationFeedbackGenerator()
+    
     
     // MARK: - BODY
     
@@ -161,10 +163,12 @@ struct OnboardingView: View {
                                     withAnimation(Animation.easeOut(duration: 0.4)) {
                                         // Snap to right if over halfway point
                                         if buttonOffset > buttonWidth / 2 {
+                                            hapticFeedback.notificationOccurred(.success)
                                             playSound(sound: "chimeup", type: "mp3")
                                             buttonOffset = buttonWidth - 80
                                             isOnboardingViewActive = false
                                         } else {
+                                            hapticFeedback.notificationOccurred(.warning)
                                             // Snap to left
                                             buttonOffset = 0
                                         }
