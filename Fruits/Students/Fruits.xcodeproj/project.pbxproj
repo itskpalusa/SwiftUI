@@ -93,6 +93,7 @@
 				0B2834DF2B7336500043D3D5 /* FruitsApp.swift */,
 				0B2834E12B7336500043D3D5 /* ContentView.swift */,
 				0BAA1E7B2B74628000B34825 /* OnboardingView.swift */,
+				0BEB013F2B7985B5007EDA7F /* FruitDetailView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -103,7 +104,6 @@
 				0BAA1E772B745E1900B34825 /* FruitCardView.swift */,
 				0BAA1E792B7460A800B34825 /* StartButtonView.swift */,
 				0BB2AD612B7881C5002016D8 /* FruitRowView.swift */,
-				0BEB013F2B7985B5007EDA7F /* FruitDetailView.swift */,
 				0BEB01412B7987F9007EDA7F /* FruitHeaderView.swift */,
 				0BEB01432B798997007EDA7F /* SourceLinkView.swift */,
 			);
