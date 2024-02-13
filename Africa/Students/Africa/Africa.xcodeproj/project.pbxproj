@@ -29,6 +29,9 @@
 		0BF3DBE72B7C2E1600F1839C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3DBE62B7C2E1600F1839C /* MapView.swift */; };
 		0BF3DBE92B7C2E2000F1839C /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3DBE82B7C2E2000F1839C /* GalleryView.swift */; };
 		0BF3DBEB2B7C2E2900F1839C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3DBEA2B7C2E2900F1839C /* MainView.swift */; };
+		0BF3DBEE2B7C2F6C00F1839C /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3DBED2B7C2F6C00F1839C /* CoverImageView.swift */; };
+		0BF3DBF12B7C311000F1839C /* CoverImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3DBF02B7C311000F1839C /* CoverImageModel.swift */; };
+		0BF3DBF42B7C31E200F1839C /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3DBF32B7C31E200F1839C /* CodableBundleExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,9 @@
 		0BF3DBE62B7C2E1600F1839C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		0BF3DBE82B7C2E2000F1839C /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		0BF3DBEA2B7C2E2900F1839C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0BF3DBED2B7C2F6C00F1839C /* CoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageView.swift; sourceTree = "<group>"; };
+		0BF3DBF02B7C311000F1839C /* CoverImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModel.swift; sourceTree = "<group>"; };
+		0BF3DBF32B7C31E200F1839C /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,10 +94,13 @@
 		0BF3DBB52B7C2ABD00F1839C /* Africa */ = {
 			isa = PBXGroup;
 			children = (
+				0BF3DBF22B7C31D100F1839C /* Extension */,
+				0BF3DBEF2B7C310300F1839C /* Model */,
+				0BF3DBEC2B7C2F5F00F1839C /* View */,
 				0BF3DBE22B7C2D6B00F1839C /* Info.plist */,
 				0BF3DBD92B7C2CC800F1839C /* Data */,
-				0BF3DBC42B7C2C9700F1839C /* Video */,
 				0BF3DBE32B7C2DD200F1839C /* App */,
+				0BF3DBC42B7C2C9700F1839C /* Video */,
 				0BF3DBBA2B7C2ABE00F1839C /* Assets.xcassets */,
 				0BF3DBBC2B7C2ABE00F1839C /* Preview Content */,
 			);
@@ -145,6 +154,30 @@
 				0BF3DBEA2B7C2E2900F1839C /* MainView.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		0BF3DBEC2B7C2F5F00F1839C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0BF3DBED2B7C2F6C00F1839C /* CoverImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0BF3DBEF2B7C310300F1839C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BF3DBF02B7C311000F1839C /* CoverImageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0BF3DBF22B7C31D100F1839C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0BF3DBF32B7C31E200F1839C /* CodableBundleExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,10 +266,13 @@
 			files = (
 				0BF3DBB92B7C2ABD00F1839C /* ContentView.swift in Sources */,
 				0BF3DBEB2B7C2E2900F1839C /* MainView.swift in Sources */,
+				0BF3DBEE2B7C2F6C00F1839C /* CoverImageView.swift in Sources */,
+				0BF3DBF12B7C311000F1839C /* CoverImageModel.swift in Sources */,
 				0BF3DBE72B7C2E1600F1839C /* MapView.swift in Sources */,
 				0BF3DBB72B7C2ABD00F1839C /* AfricaApp.swift in Sources */,
 				0BF3DBE52B7C2E0A00F1839C /* VideoListView.swift in Sources */,
 				0BF3DBE92B7C2E2000F1839C /* GalleryView.swift in Sources */,
+				0BF3DBF42B7C31E200F1839C /* CodableBundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
