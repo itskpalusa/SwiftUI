@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SettingsLabelGroup: View {
+struct SettingsLabelView: View {
     // MARK: - PROPERTIES
     
     var labelText: String
@@ -25,6 +25,6 @@ struct SettingsLabelGroup: View {
 
 // MARK: - PREVIEW
 #Preview {
-    SettingsLabelGroup(labelText: "Fruits", labelImage: "info.circle")
+    SettingsLabelView(labelText: "Fruits", labelImage: "info.circle")
         .previewLayout(.sizeThatFits)
 }
