@@ -43,6 +43,7 @@ struct AnimalListItemView: View {
 
 
 // MARK: - PREVIEW
+// works as global declaration?!
 let animals: [Animal] =
 Bundle.main.decode("animals.json")
 
